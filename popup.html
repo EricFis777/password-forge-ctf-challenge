@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Password Forge</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <h1>Password Forge <small>v0.1</small></h1>
+    <p class="intro">Make a password for the next account you create.</p>
+    <label for="length">Length <span id="lengthValue">16</span></label>
+    <input id="length" type="range" min="4" max="64" value="16">
+    <fieldset>
+      <legend>Include characters</legend>
+      <label><input id="lower" type="checkbox" checked> Lowercase</label>
+      <label><input id="upper" type="checkbox" checked> Uppercase</label>
+      <label><input id="digits" type="checkbox" checked> Numbers</label>
+      <label><input id="symbols" type="checkbox" checked> Symbols</label>
+    </fieldset>
+    <label for="output">Your password</label>
+    <input id="output" readonly placeholder="Select Generate">
+    <div class="actions"><button id="generate">Generate</button><button id="copy">Copy</button></div>
+    <p id="strength">Strength: —</p>
+    <p id="status" role="status" aria-live="polite"></p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
