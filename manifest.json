@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "Password Forge - CTF Challenge",
+  "version": "0.1.0",
+  "description": "An intentionally imperfect password-generator extension for a local QA challenge.",
+  "action": { "default_popup": "popup.html", "default_title": "Password Forge" },
+  "permissions": ["storage", "clipboardWrite"]
+}
